@@ -1,7 +1,7 @@
-# equirectangular-remap
+# ThetaS-video-remap
 ![Example](src.gif) ➡️ ![Result](generated.gif)
 
-Generate maps for conversions of spherical video from full frame fish-eye to equirectangular video in [ffmpeg](http://ffmpeg.org).
+Generate maps for [ffmpeg](http://ffmpeg.org) to convert of spherical video from the dual-full frame fish-eye images to equirectangular video.
 
 Adapted from the example given for ffmpeg's [`RemapFilter`](https://trac.ffmpeg.org/wiki/RemapFilter), with support added for video captured with Ricoh Theta S devices.
 

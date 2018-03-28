@@ -29,5 +29,14 @@ This creates two ASCII encoded [PGM files](https://en.wikipedia.org/wiki/Netpbm_
 #### Apply the maps to the video `R0014696.MP4`:
 
 ```
-$ ffmpeg -i R0014696.MP4 -i xmap.pgm -i ymap.pgm -q 0 -lavfi "format=pix_fmts=rgb24,remap" output.mp4
+$ ffmpeg -i R0014696.MP4 -i xmap.pgm -i ymap.pgm -q 0 -lavfi "format=pix_fmts=rgb24,remap" remapped.mp4
 ```
+
+#### Tag for upload
+
+If you want to upload your video to youtube, make sure you encoded it as a .mp4, and use [this](https://github.com/google/spatial-media) tool from google. On linux, you can install `python-tk` and use the gui, or use it via command line. The instructions say to run `python spatialmedia` but this results in an error, replace `spatialmedia` with `__main__.py` and it works.
+
+```
+python __main__.py -i remapped.mp4 remapped_injected.mp4
+```
+Your file is now ready for YouTube/etc.

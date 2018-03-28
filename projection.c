@@ -395,7 +395,8 @@ double2 evaluatePixel_Theta(double2 outPos, double2 srcSize) {
     
   // Convert spherical to input coordinates...
   theta2 = atan2(-sphericCoords.z, sphericCoords.x);
-  phi2_over_pi = acos(sphericCoords.y) / M_PI;
+  // phi2_over_pi = acos(sphericCoords.y) / M_PI;
+  phi2_over_pi = sphericCoords.y;
 
   inCentered.x = (phi2_over_pi * cos(theta2) * magicnum + 0.5 + lens) * srcSize.x;
   inCentered.y = (phi2_over_pi * sin(theta2) * magicnum + 0.5) * srcSize.y;

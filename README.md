@@ -31,7 +31,15 @@ This creates two ASCII encoded [PGM files](https://en.wikipedia.org/wiki/Netpbm_
 ```
 $ ffmpeg -i R0014696.MP4 -i xmap.pgm -i ymap.pgm -q 0 -lavfi "format=pix_fmts=rgb24,remap" remapped.mp4
 ```
+#### Known issues
+The Lens mapping isn't perfect, I'm working on getting a more accurate mapping.
 
+![spinning camera](spin.gif)
+![stabilized wobble example](wobbly.gif)
+
+Stabilizing output videos via  Hugin with [Matthew Petroff's method](https://mpetroff.net/2016/11/stabilizing-360-video-with-hugin/) reveals a wobble that would not be present if the mapping was perfect; Convieniently, I think i can use Hugin's Lens Calibration tools on the source frames to find a better mapping.
+
+### Useful Things for Spherical Video
 #### Tag for upload
 
 If you want to upload your video to youtube, make sure you encoded it as a .mp4, and use [this](https://github.com/google/spatial-media) tool from google. On linux, you can install `python-tk` and use the gui, or use it via command line. The instructions say to run `python spatialmedia` but this results in an error, replace `spatialmedia` with `__main__.py` and it works.

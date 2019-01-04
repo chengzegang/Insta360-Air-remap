@@ -42,8 +42,9 @@ Stabilizing output videos via  Hugin with [Matthew Petroff's method](https://mpe
 ### Useful Things for Spherical Video
 #### Tag for upload
 
-If you want to upload your video to youtube, make sure you encoded it as a .mp4, and use [this](https://github.com/google/spatial-media) tool from google. On linux, you can install `python-tk` and use the gui, or use it via command line. The instructions say to run `python spatialmedia` but this results in an error, replace `spatialmedia` with `__main__.py` and it works.
+If you want to upload your video to youtube as a 360 video, make sure you encoded it as a .mp4, and use [this](https://github.com/google/spatial-media) tool from google. On linux, you can install `python-tk` and use the gui, or use it via command line. 
 
+The instructions there say to run `python spatialmedia` but there isn't anything called that, so replace `spatialmedia` with `__main__.py` and it works.
 ```
 python __main__.py -i remapped.mp4 remapped_injected.mp4
 ```

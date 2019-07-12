@@ -12,7 +12,7 @@ The code was adapted from examples given for ffmpeg's [`RemapFilter`](https://tr
 
 1. Install ffmpeg, (make sure it's a recent version)
 2. Checkout the source of this repository
-3. Build: `gcc projection.c -lm -o project`
+3. Build: `gcc projection.c -lm -o project` or just run `./Insta360-Air-remap/compile.sh`
 
 ### Running
 

@@ -27,7 +27,8 @@ This creates two ASCII encoded [PGM files](https://en.wikipedia.org/wiki/Netpbm_
 There are various pre-generated lookup tables included allready:
 
 1) <img src="/Insta360-Air-remap/pictures/insta360down.png" width="60"> camera in uptight position (USB connector down)
-<img src="/Insta360-Air-remap/xmap_insta360air_usb_down.jpg" width="180"> <img src="/Insta360-Air-remap/ymap_insta360air_usb_down.jpg" width="180"> result: <img src="/Insta360-Air-remap/insta360_1.png" width="180"> ➡️ <img src="/Insta360-Air-remap/insta360_1_down.jpg" width="180">
+
+xmap<img src="/Insta360-Air-remap/xmap_insta360air_usb_down.jpg" width="180"> ymap<img src="/Insta360-Air-remap/ymap_insta360air_usb_down.jpg" width="180"> result: <img src="/Insta360-Air-remap/insta360_1.png" width="180"> ➡️ <img src="/Insta360-Air-remap/insta360_1_down.jpg" width="180">
 
 2) <img src="/Insta360-Air-remap/pictures/insta360up.png" width="60"> camera in hanging position (USB connector up)
 

@@ -1,5 +1,5 @@
 # Insta360-Air-remap
-<img src="/Insta360-Air-remap/insta360_1.png" width="350"> ➡️ <img src="/Insta360-Air-remap/insta360_1_down.jpg" width="350">
+<img src="/Insta360-Air-remap/insta360_1.png" width="400"> ➡️ <img src="/Insta360-Air-remap/insta360_1_down.jpg" width="400">
 
 This code generates remapping projections for [ffmpeg](http://ffmpeg.org) to convert from dual-fish-eye images/video (spherical) to equirectangular output. It can be used to map both images and video.
 
@@ -27,15 +27,16 @@ This creates two ASCII encoded [PGM files](https://en.wikipedia.org/wiki/Netpbm_
 There are various pre-generated lookup tables included allready:
 1) Insta360 Air in uptight position (USB connector down)
 
-<img src="/Insta360-Air-remap/xmap_insta360air_usb_down.jpg" width="250"> <img src="/Insta360-Air-remap/ymap_insta360air_usb_down.jpg" width="250">
+<img src="/Insta360-Air-remap/xmap_insta360air_usb_down.jpg" width="180"> <img src="/Insta360-Air-remap/ymap_insta360air_usb_down.jpg" width="180"> resulting in <img src="/Insta360-Air-remap/insta360_1.png" width="180"> ➡️ <img src="/Insta360-Air-remap/insta360_1_down.jpg" width="180">
 
 2) Insta360 Air in hanging position (USB connector up)
 
-<img src="/Insta360-Air-remap/xmap_insta360air_usb_up.jpg" width="250"> <img src="/Insta360-Air-remap/ymap_insta360air_usb_up.jpg" width="250">
+<img src="/Insta360-Air-remap/xmap_insta360air_usb_up.jpg" width="180"> <img src="/Insta360-Air-remap/ymap_insta360air_usb_up.jpg" width="180"> resulting in <img src="/Insta360-Air-remap/insta360_1.png" width="180"> ➡️ <img src="/Insta360-Air-remap/insta360_1_up.jpg" width="180">
 
 3) Insta360 Air placed sideways (USB connector right or left)
 
-<img src="/Insta360-Air-remap/xmap.jpg" width="250"> <img src="/Insta360-Air-remap/ymap.jpg" width="250">
+
+<img src="/Insta360-Air-remap/xmap.jpg" width="180"> <img src="/Insta360-Air-remap/ymap.jpg" width="180"> resulting in <img src="/Insta360-Air-remap/insta360_1.png" width="180"> ➡️ <img src="/Insta360-Air-remap/insta360_1.jpg" width="180">
 
 #### Apply the maps to the video `input.mp4`:
 

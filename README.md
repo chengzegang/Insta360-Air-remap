@@ -1,9 +1,9 @@
 # Insta360-Air-remap
-![Example](/Insta360-Air-remap/pictures/src.gif) ➡️ ![Result](/Insta360-Air-remap/pictures/generated.gif)
+![Example]<img src="/Insta360-Air-remap/insta360_1.png" width="350"> ➡️ ![Result]<img src="/Insta360-Air-remap/insta360_1_down.jpg" width="350">
 
-Generate maps for [ffmpeg](http://ffmpeg.org) to convert of spherical video from the dual-full frame fish-eye images to equirectangular video.
+This code generates remapping projections for [ffmpeg](http://ffmpeg.org) to convert from dual-fish-eye images/video (spherical) to equirectangular output. It can be used to map both images and video.
 
-Adapted from the example given for ffmpeg's [`RemapFilter`](https://trac.ffmpeg.org/wiki/RemapFilter), with support added for video captured with Ricoh Theta S devices.
+The code was adapted from examples given for ffmpeg's [`RemapFilter`](https://trac.ffmpeg.org/wiki/RemapFilter), with added support for video captured with Insta360 Air devices.
 
 
 ## Guide

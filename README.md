@@ -26,15 +26,15 @@ This creates two ASCII encoded [PGM files](https://en.wikipedia.org/wiki/Netpbm_
 
 There are various pre-generated lookup tables included allready:
 
-1) <img src="/Insta360-Air-remap/pictures/insta360down.png" width="60"> Insta360 Air in uptight position (USB connector down)
+1) <img src="/Insta360-Air-remap/pictures/insta360down.png" width="60"> camera in uptight position (USB connector down)
 
 <img src="/Insta360-Air-remap/xmap_insta360air_usb_down.jpg" width="180"> <img src="/Insta360-Air-remap/ymap_insta360air_usb_down.jpg" width="180"> resulting in <img src="/Insta360-Air-remap/insta360_1.png" width="180"> ➡️ <img src="/Insta360-Air-remap/insta360_1_down.jpg" width="180">
 
-2) <img src="/Insta360-Air-remap/pictures/insta360up.png" width="60"> Insta360 Air in hanging position (USB connector up)
+2) <img src="/Insta360-Air-remap/pictures/insta360up.png" width="60"> camera in hanging position (USB connector up)
 
 <img src="/Insta360-Air-remap/xmap_insta360air_usb_up.jpg" width="180"> <img src="/Insta360-Air-remap/ymap_insta360air_usb_up.jpg" width="180"> resulting in <img src="/Insta360-Air-remap/insta360_1.png" width="180"> ➡️ <img src="/Insta360-Air-remap/insta360_1_up.jpg" width="180">
 
-3) <img src="/Insta360-Air-remap/pictures/insta360side.png" width="60"> Insta360 Air placed sideways (USB connector right or left)
+3) <img src="/Insta360-Air-remap/pictures/insta360side.png" width="60"> camera placed sideways (USB connector right or left)
 
 <img src="/Insta360-Air-remap/xmap.jpg" width="180"> <img src="/Insta360-Air-remap/ymap.jpg" width="180"> resulting in <img src="/Insta360-Air-remap/insta360_1.png" width="180"> ➡️ <img src="/Insta360-Air-remap/insta360_1.jpg" width="180">
 

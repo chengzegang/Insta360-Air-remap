@@ -1,5 +1,5 @@
-# ThetaS-video-remap
-![Example](src.gif) ➡️ ![Result](generated.gif)
+# Insta360-Air-remap
+![Example](/Insta360-Air-remap/pictures/src.gif) ➡️ ![Result](/Insta360-Air-remap/pictures/generated.gif)
 
 Generate maps for [ffmpeg](http://ffmpeg.org) to convert of spherical video from the dual-full frame fish-eye images to equirectangular video.
 
@@ -22,20 +22,31 @@ Adapted from the example given for ffmpeg's [`RemapFilter`](https://trac.ffmpeg.
 $ ./project -x xmap.pgm -y ymap.pgm -h 960 -w 960 -c 1920 -r 960 -m theta --verbose
 ```
 
-![xmap](xmap.png) ![ymap](ymap.png)
-
 This creates two ASCII encoded [PGM files](https://en.wikipedia.org/wiki/Netpbm_format#PGM_example) which act as a lookup table for ffmpeg to remap the video.
 
-#### Apply the maps to the video `R0014696.MP4`:
+There are various pre-generated lookup tables included allready:
+1) Insta360 Air in uptight position (USB connector down)
+
+<img src="/Insta360-Air-remap/xmap_insta360air_usb_down.jpg" width="250"> <img src="/Insta360-Air-remap/ymap_insta360air_usb_down.jpg" width="250">
+
+2) Insta360 Air in hanging position (USB connector up)
+
+<img src="/Insta360-Air-remap/xmap_insta360air_usb_up.jpg" width="250"> <img src="/Insta360-Air-remap/ymap_insta360air_usb_up.jpg" width="250">
+
+3) Insta360 Air placed sideways (USB connector right or left)
+
+<img src="/Insta360-Air-remap/xmap.jpg" width="250"> <img src="/Insta360-Air-remap/ymap.jpg" width="250">
+
+#### Apply the maps to the video `input.mp4`:
 
 ```
-$ ffmpeg -i R0014696.MP4 -i xmap.pgm -i ymap.pgm -q 0 -lavfi "format=pix_fmts=rgb24,remap" remapped.mp4
+$ ffmpeg -i input.mp4 -i xmap.pgm -i ymap.pgm -q 0 -lavfi "format=pix_fmts=rgb24,remap" remapped.mp4
 ```
 #### Known issues
 The Lens mapping isn't perfect, I'm working on getting a more accurate mapping.
 
-![spinning camera](spin.gif)
-![stabilized wobble example](wobbly.gif)
+![spinning camera](/Insta360-Air-remap/pictures/spin.gif)
+![stabilized wobble example](/Insta360-Air-remap/pictures/wobbly.gif)
 
 Stabilizing output videos via  Hugin with [Matthew Petroff's method](https://mpetroff.net/2016/11/stabilizing-360-video-with-hugin/) reveals a wobble that would not be present if the mapping was perfect; Convieniently, I think i can use Hugin's Lens Calibration tools on the source frames to find a better mapping.
 

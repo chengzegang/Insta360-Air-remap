@@ -21,9 +21,6 @@ The code was adapted from examples given for ffmpeg's [`RemapFilter`](https://tr
 ```
 $ ./project -x xmap.pgm -y ymap.pgm -h 960 -w 960 -c 1920 -r 960 -m theta --verbose
 ```
-or simply run:
-`./Insta360-Air-remap/compile.sh`
-
 This creates two ASCII encoded [PGM files](https://en.wikipedia.org/wiki/Netpbm_format#PGM_example) which act as a lookup table for ffmpeg to remap the video.
 
 #### 2.) Apply the maps to the video:

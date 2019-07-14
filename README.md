@@ -38,6 +38,7 @@ run: `./remap_vid_up.sh`
 
 3) camera placed sideways (USB connector right or left)
 run: `./remap_vid.sh`
+      
       <img src="/Insta360-Air-remap/pictures/insta360side.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="300"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360_still-001_basic.jpg" width="300">
 
 #### Apply the maps to the video `input.mp4`:

@@ -1,5 +1,5 @@
 # Insta360-Air-remap
-<img src="/Insta360-Air-remap/demopics/input.gif" width="400"> ➡️ <img src="/Insta360-Air-remap/demopics/output.gif" width="400">
+<img src="/Insta360-Air-remap/pictures/input.gif" width="400"> ➡️ <img src="/Insta360-Air-remap/pictures/output.gif" width="400">
 
 This code generates remapping projections for [ffmpeg](http://ffmpeg.org) to convert from dual-fish-eye images/video (spherical) to equirectangular output. It can be used to map both images and video.
 

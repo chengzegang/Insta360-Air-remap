@@ -16,7 +16,7 @@ The code was adapted from examples given for ffmpeg's [`RemapFilter`](https://tr
 
 ### Running
 
-### Create remapping lookup-tables xmap.pgm and ymap.pgm:
+##### Create remapping lookup-tables xmap.pgm and ymap.pgm:
 
 ```
 $ ./project -x xmap.pgm -y ymap.pgm -h 960 -w 960 -c 1920 -r 960 -m theta --verbose
@@ -24,7 +24,7 @@ $ ./project -x xmap.pgm -y ymap.pgm -h 960 -w 960 -c 1920 -r 960 -m theta --verb
 
 This creates two ASCII encoded [PGM files](https://en.wikipedia.org/wiki/Netpbm_format#PGM_example) which act as a lookup table for ffmpeg to remap the video.
 
-### Apply the maps to the video:
+##### Apply the maps to the video:
 
 ```
 $ ffmpeg -i input.mp4 -i xmap.pgm -i ymap.pgm -q 0 -lavfi "format=pix_fmts=rgb24,remap" remapped.mp4
@@ -47,7 +47,7 @@ run: `./remap_vid.sh`
       
       <img src="/Insta360-Air-remap/pictures/insta360side.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="300"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360_still-001_basic.jpg" width="300">
 
-#### Known issues
+### Known issues
 The Lens mapping isn't perfect, I'm working on getting a more accurate mapping.
 
 Stabilizing output videos via  Hugin with [Matthew Petroff's method](https://mpetroff.net/2016/11/stabilizing-360-video-with-hugin/) reveals a wobble that would not be present if the mapping was perfect; Convieniently, I think i can use Hugin's Lens Calibration tools on the source frames to find a better mapping.

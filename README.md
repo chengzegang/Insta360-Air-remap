@@ -28,15 +28,15 @@ There are various pre-generated lookup tables included allready:
 
 1) camera in uptight position (USB connector down)
 
-      <img src="/Insta360-Air-remap/pictures/insta360down.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="180"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360-still-001_down.jpg" width="180">
+      <img src="/Insta360-Air-remap/pictures/insta360down.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="240"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360-still-001_down.jpg" width="240">
 
 2) camera in hanging position (USB connector up)
 
-      <img src="/Insta360-Air-remap/pictures/insta360up.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="180"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360-still-001_up.jpg" width="180">
+      <img src="/Insta360-Air-remap/pictures/insta360up.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="240"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360-still-001_up.jpg" width="240">
 
 3) camera placed sideways (USB connector right or left)
 
-      <img src="/Insta360-Air-remap/pictures/insta360side.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="180"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360_still-001_basic.jpg" width="180">
+      <img src="/Insta360-Air-remap/pictures/insta360side.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="240"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360_still-001_basic.jpg" width="240">
 
 #### Apply the maps to the video `input.mp4`:
 
@@ -45,9 +45,6 @@ $ ffmpeg -i input.mp4 -i xmap.pgm -i ymap.pgm -q 0 -lavfi "format=pix_fmts=rgb24
 ```
 #### Known issues
 The Lens mapping isn't perfect, I'm working on getting a more accurate mapping.
-
-![spinning camera](/Insta360-Air-remap/pictures/spin.gif)
-![stabilized wobble example](/Insta360-Air-remap/pictures/wobbly.gif)
 
 Stabilizing output videos via  Hugin with [Matthew Petroff's method](https://mpetroff.net/2016/11/stabilizing-360-video-with-hugin/) reveals a wobble that would not be present if the mapping was perfect; Convieniently, I think i can use Hugin's Lens Calibration tools on the source frames to find a better mapping.
 

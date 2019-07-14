@@ -27,16 +27,13 @@ This creates two ASCII encoded [PGM files](https://en.wikipedia.org/wiki/Netpbm_
 There are various pre-generated lookup tables included allready:
 
 1) camera in uptight position (USB connector down)
-<img src="/Insta360-Air-remap/pictures/insta360down.png" width="60">
-<img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="180"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360-still-001_down.jpg" width="180">
+<img src="/Insta360-Air-remap/pictures/insta360down.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="180"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360-still-001_down.jpg" width="180">
 
 2) camera in hanging position (USB connector up)
-<img src="/Insta360-Air-remap/pictures/insta360up.png" width="60">
-<img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="180"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360-still-001_up.jpg" width="180">
+<img src="/Insta360-Air-remap/pictures/insta360up.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="180"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360-still-001_up.jpg" width="180">
 
 3) camera placed sideways (USB connector right or left)
-<img src="/Insta360-Air-remap/pictures/insta360side.png" width="60">
-<img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="180"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360_still-001_basic.jpg" width="180">
+<img src="/Insta360-Air-remap/pictures/insta360side.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="180"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360_still-001_basic.jpg" width="180">
 
 #### Apply the maps to the video `input.mp4`:
 

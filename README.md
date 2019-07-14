@@ -12,19 +12,21 @@ The code was adapted from examples given for ffmpeg's [`RemapFilter`](https://tr
 
 1. Install ffmpeg, (make sure it's a recent version)
 2. Checkout the source of this repository
-3. Build: `gcc projection.c -lm -o project` or just run `./Insta360-Air-remap/compile.sh`
+3. Build: `gcc projection.c -lm -o project` 
 
 ### Running
 
-#### Create remapping lookup-tables xmap.pgm and ymap.pgm:
+#### 1.) Create remapping lookup-tables xmap.pgm and ymap.pgm:
 
 ```
 $ ./project -x xmap.pgm -y ymap.pgm -h 960 -w 960 -c 1920 -r 960 -m theta --verbose
 ```
+or simply run:
+`./Insta360-Air-remap/compile.sh`
 
 This creates two ASCII encoded [PGM files](https://en.wikipedia.org/wiki/Netpbm_format#PGM_example) which act as a lookup table for ffmpeg to remap the video.
 
-#### Apply the maps to the video:
+#### 2.) Apply the maps to the video:
 
 ```
 $ ffmpeg -i input.mp4 -i xmap.pgm -i ymap.pgm -q 0 -lavfi "format=pix_fmts=rgb24,remap" remapped.mp4

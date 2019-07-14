@@ -16,7 +16,7 @@ The code was adapted from examples given for ffmpeg's [`RemapFilter`](https://tr
 
 ### Running
 
-#### Create maps `xmap.pgm` and `ymap.pgm` for use with videos from "Insta360 Air" devices:
+### Create maps `xmap.pgm` and `ymap.pgm` for use with videos from "Insta360 Air" devices:
 
 ```
 $ ./project -x xmap.pgm -y ymap.pgm -h 960 -w 960 -c 1920 -r 960 -m theta --verbose
@@ -24,7 +24,7 @@ $ ./project -x xmap.pgm -y ymap.pgm -h 960 -w 960 -c 1920 -r 960 -m theta --verb
 
 This creates two ASCII encoded [PGM files](https://en.wikipedia.org/wiki/Netpbm_format#PGM_example) which act as a lookup table for ffmpeg to remap the video.
 
-#### Apply the maps to the video `input.mp4`:
+### Apply the maps to the video `input.mp4`:
 
 ```
 $ ffmpeg -i input.mp4 -i xmap.pgm -i ymap.pgm -q 0 -lavfi "format=pix_fmts=rgb24,remap" remapped.mp4

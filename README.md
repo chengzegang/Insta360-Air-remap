@@ -16,7 +16,7 @@ The code was adapted from examples given for ffmpeg's [`RemapFilter`](https://tr
 
 ### Running
 
-#### Create maps `xmap.pgm` and `ymap.pgm` for use with videos from Theta S devices:
+#### Create maps `xmap.pgm` and `ymap.pgm` for use with videos from "Insta360 Air" devices:
 
 ```
 $ ./project -x xmap.pgm -y ymap.pgm -h 960 -w 960 -c 1920 -r 960 -m theta --verbose
@@ -24,18 +24,20 @@ $ ./project -x xmap.pgm -y ymap.pgm -h 960 -w 960 -c 1920 -r 960 -m theta --verb
 
 This creates two ASCII encoded [PGM files](https://en.wikipedia.org/wiki/Netpbm_format#PGM_example) which act as a lookup table for ffmpeg to remap the video.
 
-There are various pre-generated lookup tables included allready:
+There are various pre-generated lookup tables included:
 
 1) camera in uptight position (USB connector down)
+run: `./remap_vid_down.sh`
 
       <img src="/Insta360-Air-remap/pictures/insta360down.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="300"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360-still-001_down.jpg" width="300">
 
 2) camera in hanging position (USB connector up)
+run: `./remap_vid_up.sh`
 
       <img src="/Insta360-Air-remap/pictures/insta360up.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="300"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360-still-001_up.jpg" width="300">
 
 3) camera placed sideways (USB connector right or left)
-
+run: `./remap_vid.sh`
       <img src="/Insta360-Air-remap/pictures/insta360side.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="300"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360_still-001_basic.jpg" width="300">
 
 #### Apply the maps to the video `input.mp4`:

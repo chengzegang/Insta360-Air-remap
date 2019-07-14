@@ -32,7 +32,7 @@ result: <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="18
 
 2) <img src="/Insta360-Air-remap/pictures/insta360up.png" width="60"> camera in hanging position (USB connector up)
 
-result: <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="180"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360-still-001_ip.jpg" width="180">
+result: <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="180"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360-still-001_up.jpg" width="180">
 
 3) <img src="/Insta360-Air-remap/pictures/insta360side.png" width="60"> camera placed sideways (USB connector right or left)
 

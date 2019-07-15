@@ -47,7 +47,10 @@ run: `./remap_vid.sh`
       <img src="/Insta360-Air-remap/pictures/insta360side.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="300"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360_still-001_basic.jpg" width="300">
 
 ### Known issues
-The Lens mapping isn't perfect, I'm working on getting a more accurate mapping.
+The Lens mapping isn't perfect yet. Unfortunatly the "seam" between both pictures will only be perfect for objects that have a certain/specific distance from the camera. This distance can be fine tuned in the code but it will be fixed. Basically this image illustrates the challange quite well:
+
+<img src="/Insta360-Air-remap/pictures/Insta360overlap.JPG">
+In this example the distance is perfectly tuned for Distance "B".... hence creating a crop effect at Distance "C" and an Overlap effect at Distance "A".
 
 Stabilizing output videos via  Hugin with [Matthew Petroff's method](https://mpetroff.net/2016/11/stabilizing-360-video-with-hugin/) reveals a wobble that would not be present if the mapping was perfect; Convieniently, I think i can use Hugin's Lens Calibration tools on the source frames to find a better mapping.
 

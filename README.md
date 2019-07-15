@@ -50,7 +50,7 @@ run: `./remap_vid.sh`
 The Lens mapping isn't perfect yet. Unfortunatly the "seam" between both pictures will only be perfect for objects that have a certain/specific distance from the camera. This distance can be fine tuned in the code but it will be fixed. Basically this image illustrates the challange quite well:
 
 <p align="center">
-<img src="/Insta360-Air-remap/pictures/Insta360overlap.JPG"><br>
+<img src="/Insta360-Air-remap/pictures/Insta360overlap.JPG" width="500"><br>
 In this example the distance is perfectly tuned for Distance "B"....<br>
 Hence creating a crop effect at Distance "C" and an Overlap effect at Distance "A".
 </p>

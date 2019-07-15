@@ -56,8 +56,6 @@ Hence creating a crop effect at Distance "C" and an Overlap effect at Distance "
 </p>
 
 
-Stabilizing output videos via  Hugin with [Matthew Petroff's method](https://mpetroff.net/2016/11/stabilizing-360-video-with-hugin/) reveals a wobble that would not be present if the mapping was perfect; Convieniently, I think i can use Hugin's Lens Calibration tools on the source frames to find a better mapping.
-
 ### Useful Things for Spherical Video
 #### Tag for upload
 
@@ -68,3 +66,7 @@ The instructions there say to run `python spatialmedia` but there isn't anything
 python __main__.py -i remapped.mp4 remapped_injected.mp4
 ```
 Your file is now ready for YouTube/etc.
+
+#### Stabilize video with Hugin
+
+Stabilizing output videos via  Hugin with [Matthew Petroff's method](https://mpetroff.net/2016/11/stabilizing-360-video-with-hugin/) reveals a wobble that would not be present if the mapping was perfect; Convieniently, I think i can use Hugin's Lens Calibration tools on the source frames to find a better mapping.

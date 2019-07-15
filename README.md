@@ -51,7 +51,8 @@ The Lens mapping isn't perfect yet. Unfortunatly the "seam" between both picture
 
 <p align="center">
 <img src="/Insta360-Air-remap/pictures/Insta360overlap.JPG"><br>
-In this example the distance is perfectly tuned for Distance "B".... hence creating a crop effect at Distance "C" and an Overlap effect at Distance "A".
+In this example the distance is perfectly tuned for Distance "B"....<br>
+Hence creating a crop effect at Distance "C" and an Overlap effect at Distance "A".
 </p>
 
 

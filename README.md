@@ -1,5 +1,5 @@
 # Insta360-Air-remap
-<img src="/Insta360-Air-remap/pictures/input.gif" width="400"> ➡️ <img src="/Insta360-Air-remap/pictures/output.gif" width="400">
+<img src="/Insta360-Air-remap/pictures/input.gif" width="400"> &#x2794; <img src="/Insta360-Air-remap/pictures/output.gif" width="400">
 
 This code generates remapping projections for [ffmpeg](http://ffmpeg.org) to convert from dual-fish-eye images/video (spherical) to equirectangular output. It can be used to map both images and video.
 
@@ -34,17 +34,17 @@ There are various pre-generated lookup tables included:
 1) camera in uptight position (USB connector down)
 run: `./remap_vid_down.sh`
 
-      <img src="/Insta360-Air-remap/pictures/insta360down.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="300"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360-still-001_down.jpg" width="300">
+      <img src="/Insta360-Air-remap/pictures/insta360down.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="300"> &#x2794; <img src="/Insta360-Air-remap/demopics/insta360-still-001_down.jpg" width="300">
 
 2) camera in hanging position (USB connector up)
 run: `./remap_vid_up.sh`
 
-      <img src="/Insta360-Air-remap/pictures/insta360up.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="300"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360-still-001_up.jpg" width="300">
+      <img src="/Insta360-Air-remap/pictures/insta360up.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="300"> &#x2794; <img src="/Insta360-Air-remap/demopics/insta360-still-001_up.jpg" width="300">
 
 3) camera placed sideways (USB connector right or left)
 run: `./remap_vid.sh`
       
-      <img src="/Insta360-Air-remap/pictures/insta360side.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="300"> ➡️ <img src="/Insta360-Air-remap/demopics/insta360_still-001_basic.jpg" width="300">
+      <img src="/Insta360-Air-remap/pictures/insta360side.png" width="60"> <img src="/Insta360-Air-remap/demopics/insta360-still-001.png" width="300"> &#x2794; <img src="/Insta360-Air-remap/demopics/insta360_still-001_basic.jpg" width="300">
 
 ### Known issues
 The Lens mapping isn't perfect yet. Unfortunatly the "seam" between both pictures will only be perfect for objects that have a certain/specific distance from the camera. This distance can be fine tuned in the code but it will be fixed. Basically this image illustrates the challange quite well:

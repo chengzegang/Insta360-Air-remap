@@ -70,3 +70,12 @@ Your file is now ready for YouTube/etc.
 #### Stabilize video with Hugin
 
 Stabilizing output videos via  Hugin with [Matthew Petroff's method](https://mpetroff.net/2016/11/stabilizing-360-video-with-hugin/) reveals a wobble that would not be present if the mapping was perfect; Convieniently, I think i can use Hugin's Lens Calibration tools on the source frames to find a better mapping.
+
+
+Some referrence links:
+- Rotate Excel tables in 90 oder 180 degree:<br>
+https://www.extendoffice.com/de/documents/excel/4602-excel-rotate-table-90-degree-180-degree.html#a1
+- PGM Format Specification:<br>
+http://netpbm.sourceforge.net/doc/pgm.html
+- Transpose a matrix in C<br>
+https://www.programmingsimplified.com/c-program-transpose-matrix
